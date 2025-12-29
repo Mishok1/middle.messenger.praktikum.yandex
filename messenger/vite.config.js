@@ -10,4 +10,20 @@ export default defineConfig({
     //         },
     //     },
     // },
+
+
+    // переменные/миксины во все scss без ручных импортов
+    // css: {
+    //     preprocessorOptions: {
+    //         scss: {
+    //             // additionalData: `@use "./src/styles/vars.scss" as *;`
+    //         },
+    //     },
+    // },
+
+    // build: {
+    //     outDir: 'build',
+    //     emptyOutDir: true,
+    //     assetsDir: 'assets',
+    // },
 })
