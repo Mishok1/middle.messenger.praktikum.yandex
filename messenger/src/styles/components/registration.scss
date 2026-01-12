@@ -1,12 +1,13 @@
-.registration {}
+@use '../common/variables.scss';
 
-.registration__container {
-    width: 340px;
-    box-shadow: 0px 0px 6px 0px #00000024;
+.registration {
+    padding: 52px 0 0;
 }
 
 .registration__form {
-    padding: 50px 30px 30px;
-    background-color: $primary-color;
-    border-radius: 12px;
+    height: 615px;
+}
+
+.registration__container {
+    width: 340px;
 }

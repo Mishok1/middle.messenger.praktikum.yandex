@@ -1,5 +1,10 @@
 @use './common/global.scss';
+@use './common/visually-hidden.scss';
 @use './common/variables.scss';
 @use './common/container.scss';
 @use './components/registration.scss';
+@use './components/form.scss';
+@use './components/button.scss';
 @use './components/title.scss';
+@use './components/login.scss';
+@use './components/profile.scss';
