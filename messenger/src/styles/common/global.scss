@@ -2,7 +2,13 @@
     box-sizing: border-box;
 }
 
-body {}
+body {
+    margin: 0;
+    font-family: "Inter-Medium", sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+}
 
 a {
     display: block;

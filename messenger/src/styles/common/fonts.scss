@@ -2,7 +2,7 @@
     font-family: "Inter-Medium";
     font-style: normal;
     font-weight: 500;
-    src: url('../../../public/fonts/Inter/Inter-Medium.woff2') format("woff2"), url("../../../public/fonts/Inter/Inter-Medium.woff") format("woff");
+    src: url('public/fonts/Inter/Inter-Medium.woff2') format("woff2"), url("public/fonts/Inter/Inter-Medium.woff") format("woff");
     font-display: swap;
 }
 
@@ -10,6 +10,6 @@
     font-family: "Inter-SemiBold";
     font-style: normal;
     font-weight: 600;
-    src: url('../../../public/fonts/Inter/Inter-SemiBold.woff2') format("woff2"), url("../../../public/fonts/Inter/Inter-SemiBold.woff") format("woff");
+    src: url('public/fonts/Inter/Inter-SemiBold.woff2') format("woff2"), url("public/fonts/Inter/Inter-SemiBold.woff") format("woff");
     font-display: swap;
 }
