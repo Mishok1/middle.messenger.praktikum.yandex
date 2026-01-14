@@ -4,4 +4,8 @@ import handlebars from "@yoichiro/vite-plugin-handlebars";
 
 export default defineConfig({
     plugins: [handlebars()],
+    build: {
+        outDir: 'build',
+        emptyOutDir: true,
+    },
 })
