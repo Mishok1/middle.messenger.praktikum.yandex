@@ -1,32 +1,75 @@
-<section class="chats">
-    <h2 class="visually-hidden">Чаты</h2>
-    <div class="chats__container">
-        <a class="chats__link" href="./pages/profile/profile.html">
-            <span>Профиль</span>
-            <svg width="6" height="9" viewBox="0 0 6 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0.353554 8.35355L4.35355 4.35355L0.353554 0.353546" stroke="#999999" />
-            </svg>
-        </a>
-        <input class="chats__search" type="search" name="search" placeholder="Поиск">
-        <ul class="chats__list">
-            {{#each chats}}
-            <li class="chats__item">
-                {{#if src}}
-                <img class="chats__image" width="47" height="47" src="../images/{{src}}"
-                    alt="Фото пользователя.">
-                {{else}}
-                <img class="chats__image" width="47" height="47" src="../images/empty-chat.webp"
-                    alt="Фото пользователя.">
-                {{/if}}
-                <h3 class="chats__title">{{title}}</h3>
-                <p class="chats__message">{{message}}</p>
-                <p class="chats__time">{{time}}</p>
-                {{#if amount}}
-                <p class="chats__amount">{{amount}}</p>
-                {{else}}
-                {{/if}}
-            </li>
-            {{/each}}
-        </ul>
-    </div>
-</section>
+<main class="index">
+    <section class="index__chats chats">
+        <h2 class="visually-hidden">Чаты</h2>
+        <div class="chats__container">  
+            <a class="chats__link" href="./src/pages/profile/profile.html">
+                <span>Профиль</span>
+                <svg width="6" height="9" viewBox="0 0 6 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.353554 8.35355L4.35355 4.35355L0.353554 0.353546" stroke="#999999" />
+                </svg>
+            </a>
+            <input class="chats__search" type="search" name="search" placeholder="Поиск">
+            <ul class="chats__list">
+                {{#each chats}}
+                <li class="chats__item">
+                    {{#if src}}
+                    <img class="chats__image" width="47" height="47" src="../images/{{src}}" alt="Фото пользователя.">
+                    {{else}}
+                    <img class="chats__image" width="47" height="47" src="../images/empty-chat.webp"
+                        alt="Фото пользователя.">
+                    {{/if}}
+                    <h3 class="chats__title">{{title}}</h3>
+                    <p class="chats__message">{{message}}</p>
+                    <p class="chats__time">{{time}}</p>
+                    {{#if amount}}
+                    <p class="chats__amount">{{amount}}</p>
+                    {{else}}
+                    {{/if}}
+                </li>
+                {{/each}}
+            </ul>
+        </div>
+    </section>
+
+    <section class="index__message message">
+        <h2 class="visually-hidden">Написать сообщение</h2>
+        <form class="message__form" action="#" method="post">
+            <label class="message__label">
+                <input class="message__input message__input--file" type="file" name="file">
+                <svg class="message__icon" width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M5.68216 11.9956L13.2583 4.4195L14.2011 5.3623L6.62497 12.9384L5.68216 11.9956Z"
+                        fill="#3369F3" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M8.19621 14.5096L15.7724 6.93341L16.7152 7.87622L9.13902 15.4524L8.19621 14.5096Z"
+                        fill="#3369F3" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M13.5389 19.8523L21.115 12.2762L22.0578 13.219L14.4817 20.7951L13.5389 19.8523Z"
+                        fill="#3369F3" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M16.0529 22.3662L23.6291 14.7901L24.5719 15.7329L16.9957 23.3091L16.0529 22.3662Z"
+                        fill="#3369F3" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M16.053 22.3665C13.4379 24.9816 9.20735 24.991 6.60385 22.3875C4.00036 19.7841 4.00978 15.5535 6.6249 12.9384L5.68209 11.9956C2.54394 15.1337 2.53264 20.2104 5.65683 23.3346C8.78103 26.4588 13.8577 26.4475 16.9958 23.3093L16.053 22.3665Z"
+                        fill="#3369F3" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M21.115 12.2762L22.0578 13.219C24.4986 10.7782 24.5074 6.8297 22.0774 4.39978C19.6475 1.96985 15.699 1.97864 13.2583 4.41942L14.2011 5.36223C16.1188 3.44447 19.2212 3.43756 21.1304 5.34679C23.0397 7.25602 23.0327 10.3584 21.115 12.2762Z"
+                        fill="#3369F3" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M8.19646 14.51C6.45305 16.2534 6.44677 19.0738 8.18243 20.8094C9.91809 22.5451 12.7384 22.5388 14.4819 20.7954L13.539 19.8526C12.3187 21.073 10.3444 21.0774 9.12945 19.8624C7.91448 18.6475 7.91888 16.6732 9.13927 15.4528L8.19646 14.51Z"
+                        fill="#3369F3" />
+                </svg>
+            </label>
+            <label class="message__label">
+                <input class="message__input" type="text" name="message" placeholder="Сообщение">
+            </label>
+            <button class="message__button button" type="submit">
+                <span class="visually-hidden">Отправить сообщение</span>
+                <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect y="4.69971" width="11" height="1.6" fill="white" />
+                    <path d="M7 0.499756L11 5.49976L7 10.4998" stroke="white" stroke-width="1.6" />
+                </svg>
+            </button>
+        </form>
+    </section>
+</main>

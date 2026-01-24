@@ -14,7 +14,7 @@
 ![Версии](https://github.com/yandex-praktikum/mf.messenger.praktikum.yandex.images/blob/master/mf/vers.png)
 
 - `npm install` — установка стабильной версии,
-- `npm start` — запуск версии для разработчика,
+- `npm run start` — запуск версии для разработчика,
 - `npm run build:prod` — сборка стабильной версии.
 
 Для более подробных инструкции добавьте новые разделы или ссылки:
@@ -28,3 +28,9 @@
 
 
 Ссылки на все страницы: 
+Главная: https://middlemessengermishok21.netlify.app/
+Авторизация: https://middlemessengermishok21.netlify.app/src/pages/auth/auth.html
+Профиль: https://middlemessengermishok21.netlify.app/src/pages/profile/profile.html
+Регистрация: https://middlemessengermishok21.netlify.app/src/pages/registration/registration.html
+Страница 404: https://middlemessengermishok21.netlify.app/src/pages/404/404.html
+Страница 500: https://middlemessengermishok21.netlify.app/src/pages/500/500.html
