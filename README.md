@@ -29,8 +29,8 @@
 
 Ссылки на все страницы: 
 Главная: https://middlemessengermishok21.netlify.app/
-Авторизация: https://middlemessengermishok21.netlify.app/src/pages/auth/auth.html
-Профиль: https://middlemessengermishok21.netlify.app/src/pages/profile/profile.html
-Регистрация: https://middlemessengermishok21.netlify.app/src/pages/registration/registration.html
-Страница 404: https://middlemessengermishok21.netlify.app/src/pages/404/404.html
-Страница 500: https://middlemessengermishok21.netlify.app/src/pages/500/500.html
+Авторизация: https://middlemessengermishok21.netlify.app/auth
+Профиль: https://middlemessengermishok21.netlify.app/profile
+Регистрация: https://middlemessengermishok21.netlify.app/registration
+Страница 404: https://middlemessengermishok21.netlify.app/404
+Страница 500: https://middlemessengermishok21.netlify.app/500
