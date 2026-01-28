@@ -5,6 +5,7 @@ import auth from './templates/auth.hbs?raw';
 import registration from './templates/registration.hbs?raw';
 import notFound from './templates/404.hbs?raw';
 import serverError from './templates/500.hbs?raw';
+import passwordChange from './templates/password-change.hbs?raw';
 
 const routes = {
     '/': {
@@ -60,6 +61,10 @@ const routes = {
     '/registration': {
         template: registration,
         data: { test: 'Регистрация' }
+    },
+    '/password-change': {
+        template: passwordChange,
+        data: { test: 'Редактирование' }
     },
     // '/404': {
     //     template: notFound,

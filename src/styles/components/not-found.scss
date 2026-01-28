@@ -1,18 +1,20 @@
+@use '../common/variables.scss';
+@use '../common/mixins.scss';
+
 .not-found {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     height: 100vh;
-    font-family: "Inter-Medium", sans-serif;
-    font-weight: 500;
+    @include mixins.primary-font;
 }
 
 .not-found__title {
     font-size: 40px;
     line-height: 40px;
     text-align: center;
-    color: #1E1E1E;
+    color: variables.$primary-text-color;
     margin: 0;
 }
 
@@ -23,5 +25,5 @@
 }
 
 .not-found__link {
-    color: #3369F3;
+    color: variables.$secondary-color;
 }

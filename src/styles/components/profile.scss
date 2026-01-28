@@ -1,3 +1,6 @@
+@use '../common/variables.scss';
+@use '../common/mixins.scss';
+
 .profile {
     padding: 60px 0 0;
 }
@@ -6,45 +9,8 @@
     width: 510px;
 }
 
-.profile__image-wrapper {
-    width: 130px;
-    height: 130px;
-    border-radius: 50%;
-    background-color: #EFEFEF;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto 21px;
-    position: relative;
-
-    &:hover {
-        & .profile__image-button {
-            opacity: .5;
-        }
-    }
-}
-
-.profile__image-button {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    margin: 0;
-    font-size: 13px;
-    line-height: 14px;
-    text-align: center;
-    justify-content: center;
-    color: #FFFFFF;
-    width: 100%;
-    height: 100%;
-    background-color: #000000;
-    opacity: 0;
-    border-radius: 50%;
-    transition: opacity .5s;
-}
-
 .profile__name {
-    font-family: "Inter-SemiBold", sans-serif;
-    font-weight: 600;
+    @include mixins.secondary-font;
     font-size: 16px;
     line-height: 16px;
     text-align: center;
@@ -83,7 +49,7 @@
 .profile__subtitle {
     font-size: 13px;
     line-height: 13px;
-    color: #1E1E1E;
+    color: variables.$primary-text-color;
 }
 
 .profile__input {
@@ -91,7 +57,7 @@
     outline: none;
     padding: 0;
     text-align: right;
-    width: calc(100% - 100px);
+    width: calc(100% - 160px);
 
     &::placeholder {
         color: #999999;
@@ -114,9 +80,13 @@
 }
 
 .profile__button {
-    color: #3369F3;
+    color: variables.$secondary-color;
 
     &--color {
         color: #FF0000;
     }
+}
+
+.profile__link {
+    color: variables.$secondary-color;
 }

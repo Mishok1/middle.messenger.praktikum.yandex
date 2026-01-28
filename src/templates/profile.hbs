@@ -3,10 +3,13 @@
 
   <section class="profile">
     <div class="profile__container container">
-      <div class="profile__image-wrapper">
-        <img class="profile__image" src="/images/icons/empty-photo.svg" width="40" height="40" alt="Фото профиля.">
-        <button class="profile__image-button button" type="button">Поменять<br> аватар</button>
-      </div>
+      <form class="profile__avatar avatar" action="#" method="post">
+        <img class="avatar__image" src="/images/icons/empty-photo.svg" width="40" height="40" alt="Фото профиля.">
+        <label class="avatar__label">
+          <span class="avatar__text">Поменять<br> аватар</span>
+          <input class="avatar__input" type="file" name="avatar">
+        </label>
+      </form>
       <p class="profile__name">Иван</p>
 
       <form class="profile__form" action="#" method="post">
@@ -56,7 +59,8 @@
               <button class="profile__button button" type="button">Изменить данные</button>
             </li>
             <li class="profile__buttons-item">
-              <button class="profile__button button" type="button">Изменить пароль</button>
+              {{!-- <button class="profile__button button" type="button">Изменить пароль</button> --}}
+              <a class="profile__link" href="/password-change">Изменить пароль</a>
             </li>
             <li class="profile__buttons-item">
               <button class="profile__button profile__button--color button" type="button">Выйти</button>

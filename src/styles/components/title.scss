@@ -1,6 +1,7 @@
+@use '../common/mixins.scss';
+
 .title {
-    font-family: "Inter-Medium", sans-serif;
-    font-weight: 500;
+    @include mixins.primary-font;
     font-size: 20px;
     line-height: 20px;
     text-align: center;

@@ -1,0 +1,9 @@
+@mixin primary-font {
+    font-family: "Inter-Medium", sans-serif;
+    font-weight: 500;
+}
+
+@mixin secondary-font {
+    font-family: "Inter-SemiBold", sans-serif;
+    font-weight: 600;
+}

@@ -30,7 +30,8 @@
 Ссылки на все страницы: 
 Главная: https://middlemessengermishok21.netlify.app/
 Авторизация: https://middlemessengermishok21.netlify.app/auth
-Профиль: https://middlemessengermishok21.netlify.app/profile
 Регистрация: https://middlemessengermishok21.netlify.app/registration
+Профиль: https://middlemessengermishok21.netlify.app/profile
+Регистрация: https://middlemessengermishok21.netlify.app/password-change
 Страница 404: https://middlemessengermishok21.netlify.app/404
 Страница 500: https://middlemessengermishok21.netlify.app/500

@@ -1,6 +1,8 @@
+@use '../common/variables.scss';
+@use '../common/mixins.scss';
+
 .button {
-    font-family: "Inter-Medium", sans-serif;
-    font-weight: 500;
+    @include mixins.primary-font;
     font-size: 13px;
     line-height: 13px;
     text-align: center;
@@ -10,8 +12,8 @@
     cursor: pointer;
 
     &--primary {
-        color: #FFFFFF;
-        background-color: #3369F3;
+        color: variables.$bg-color;
+        background-color: variables.$secondary-color;
         border-radius: 8px;
         padding: 12px;
     }

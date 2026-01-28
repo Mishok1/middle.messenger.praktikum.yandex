@@ -1,7 +1,8 @@
+@use './common/variables.scss';
+@use './common/mixins.scss';
 @use './common/fonts.scss';
 @use './common/global.scss';
 @use './common/visually-hidden.scss';
-@use './common/variables.scss';
 @use './common/container.scss';
 @use './common/index.scss';
 @use './components/registration.scss';
@@ -10,7 +11,9 @@
 @use './components/title.scss';
 @use './components/login.scss';
 @use './components/profile.scss';
+@use './components/avatar.scss';
 @use './components/chats.scss';
 @use './components/message.scss';
 @use './components/not-found.scss';
 @use './components/server-error.scss';
+@use './components/password-change.scss';
