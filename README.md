@@ -35,3 +35,11 @@
 Регистрация: https://middlemessengermishok21.netlify.app/password-change
 Страница 404: https://middlemessengermishok21.netlify.app/404
 Страница 500: https://middlemessengermishok21.netlify.app/500
+
+
+
+
+
+Ссылка на выложенный проект: 
+
+https://middlemessengermishok21.netlify.app/
