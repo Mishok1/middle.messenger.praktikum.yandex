@@ -1,0 +1,18 @@
+@use './variables.scss';
+@use './mixins.scss';
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    @include mixins.primary-font;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+}

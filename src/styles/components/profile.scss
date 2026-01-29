@@ -1,0 +1,92 @@
+@use '../common/variables.scss';
+@use '../common/mixins.scss';
+
+.profile {
+    padding: 60px 0 0;
+}
+
+.profile__container {
+    width: 510px;
+}
+
+.profile__name {
+    @include mixins.secondary-font;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+    margin: 0 0 60px;
+}
+
+.profile__form {}
+
+.profile__field {
+    margin: 0;
+    padding: 0;
+    border: unset;
+}
+
+.profile__list {
+    margin: 0 0 40px;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.profile__item {
+    &:not(:last-of-type) {
+        border-bottom: 1px solid #EAEAEA;
+    }
+}
+
+.profile__label {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0 10px;
+}
+
+.profile__subtitle {
+    font-size: 13px;
+    line-height: 13px;
+    color: variables.$primary-text-color;
+}
+
+.profile__input {
+    border: none;
+    outline: none;
+    padding: 0;
+    text-align: right;
+    width: calc(100% - 160px);
+
+    &::placeholder {
+        color: #999999;
+    }
+}
+
+.profile__buttons {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.profile__buttons-item {
+
+    padding: 10px 0 10px;
+
+    &:not(:last-of-type) {
+        border-bottom: 1px solid #EAEAEA;
+    }
+}
+
+.profile__button {
+    color: variables.$secondary-color;
+
+    &--color {
+        color: #FF0000;
+    }
+}
+
+.profile__link {
+    color: variables.$secondary-color;
+}

@@ -1,0 +1,134 @@
+@use '../common/variables.scss';
+@use '../common/mixins.scss';
+
+.chats {
+    background-color: #FBFBFB;
+    max-width: 310px;
+    width: 100%;
+    height: 100%;
+    min-height: unset;
+    min-height: 100vh;
+
+    //ispravit na vneshnee upravlenie block
+}
+
+.chats__container {
+    padding: 21px 10px 0;
+}
+
+// .chats__link-wrapper {
+// }
+
+.chats__link {
+    font-size: 12px;
+    line-height: 12px;
+    font-size: 12px;
+    line-height: 12px;
+    color: variables.$secondary-text-color;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 0 0 23px;
+}
+
+.chats__search {
+    margin: 0 0 14px;
+    display: block;
+    width: 100%;
+    height: 32px;
+    border-radius: 5px;
+    background-color: variables.$primary-color;
+    border: none;
+    outline: none;
+    @include mixins.primary-font;
+    font-size: 12px;
+    line-height: 12px;
+    padding: 10px;
+
+    &::placeholder {
+        text-align: center;
+        // background: url("../../../public/lupa.svg") no-repeat center;
+    }
+}
+
+.chats__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.chats__item {
+    border-top: 1px solid #EAEAEA;
+    padding: 12px 0;
+    display: grid;
+    grid-template-columns: max-content auto max-content;
+    grid-template-rows: auto 1fr;
+    place-items: start;
+    cursor: pointer;
+
+    &:last-of-type {
+        border-bottom: 1px solid#EAEAEA;
+    }
+}
+
+.chats__image {
+    display: block;
+    width: 47px;
+    height: 47px;
+    border-radius: 50%;
+    background-color: variables.$primary-color;
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    margin: 0 10px 0 0;
+}
+
+.chats__title {
+    @include mixins.secondary-font;
+    font-size: 13px;
+    line-height: 13px;
+    margin: 0 15px 4px 0;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    width: 193px;
+}
+
+.chats__message {
+    margin: 0 15px 0 0;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    font-size: 12px;
+    line-height: 15px;
+    color: variables.$secondary-text-color;
+
+    & span {
+        color: #1E1E1E;
+    }
+}
+
+.chats__time {
+    margin: 0;
+    font-size: 9px;
+    line-height: 13px;
+    color: variables.$secondary-text-color;
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+}
+
+.chats__amount {
+    margin: 0;
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    font-size: 11px;
+    line-height: 12px;
+    text-align: center;
+    color: variables.$bg-color;
+    background-color: variables.$secondary-color;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    align-self: flex-end;
+}
