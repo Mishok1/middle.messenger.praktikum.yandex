@@ -1,4 +1,4 @@
-import Handlebars from "handlebars";
+import * as Handlebars from "handlebars";
 import index from './templates/index.hbs?raw';
 import profile from './templates/profile.hbs?raw';
 import auth from './templates/auth.hbs?raw';
@@ -7,7 +7,41 @@ import notFound from './templates/404.hbs?raw';
 import serverError from './templates/500.hbs?raw';
 import passwordChange from './templates/password-change.hbs?raw';
 
-const routes = {
+// type Nullable<T> = T | null;
+
+type Chat = {
+    src?: string;
+    title: string;
+    message: string;
+    time: string;
+    amount?: string;
+}
+
+type IndexPageData = {
+    chats: Chat[];
+}
+
+type SimplePageData = {
+    test: string;
+};
+
+type Template = string;
+
+type Route<TData> = {
+  template: Template;
+  data: TData;
+};
+
+type Routes = {
+  '/': Route<IndexPageData>;
+  '/profile': Route<SimplePageData>;
+  '/authorization': Route<SimplePageData>;
+  '/registration': Route<SimplePageData>;
+  '/password-change': Route<SimplePageData>;
+  '/500': Route<SimplePageData>;
+};
+
+const routes: Routes = {
     '/': {
         template: index,
         data: {
@@ -76,8 +110,8 @@ const routes = {
     },
 }
 
-function render(templateStr, data = {}) {
-    const app = document.querySelector('#app');
+function render(templateStr: string, data = {}) {
+    const app = document.querySelector('#app') as HTMLElement;
     const template = Handlebars.compile(templateStr);
     app.innerHTML = template(data);
 }

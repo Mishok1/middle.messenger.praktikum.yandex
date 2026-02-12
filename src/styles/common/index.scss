@@ -1,5 +1,8 @@
+@use './variables.scss';
+
 .index {
     display: flex;
+    background-color: variables.$bg-color;
 }
 
 .index__message {
