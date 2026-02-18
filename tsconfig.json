@@ -1,14 +1,30 @@
 {
-    "compilerOptions": {
-        "outDir": "build",
-        "target": "es2016",
-        "declaration": false,
-        "module": "commonjs",
-        "strictNullChecks": true,
-        "sourceMap": true,
-        // "allowImportingTsExtensions": true,
-    }
+  "compilerOptions": {
+    "outDir": "build",
+    "target": "es2016",
+    "strict": true,
+    "declaration": false,
+    "module": "esnext",
+    "esModuleInterop": true,
+    "strictNullChecks": true,
+    "sourceMap": true,
+    "moduleResolution": "node",
+    // "allowImportingTsExtensions": true,
+  },
+  "include": [
+    "src/**/*"
+  ]
 }
+// {
+//   "compilerOptions": {
+//     "moduleResolution": "node",
+//     // "baseUrl": "./src",        // чтобы пути резолвились относительно src
+//     "paths": {
+//       "*": ["*"]
+//     }
+//   },
+//   "include": ["src/**/*"]
+// }
 // {
 //   // Visit https://aka.ms/tsconfig to read more about this file
 //   "compilerOptions": {
